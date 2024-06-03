@@ -32,15 +32,59 @@
         </section>
         <section id="portfolio-section">
             <header id=portfolio-header-container class="section-header-container">
-                <h1 id=portfolio-title class="section-title">Portfolio</h1>
-                <h3 id=portfolio-intro class="section-intro">Portfolio description</h3>
+                <h1 id=portfolio-title class="section-title">Project Portfolio</h1>
             </header>
+            <div id="projects-container">
+                <div id="project-1-container" class="project-container">
+                    <img src="./img/coin.png" height="128px" width="128px">
+                    <div id="project-1-text">
+                        <p>Project: Coin Flip</p>
+                        <p>Description: A solo project I created that utilizes psuedorandomness to flip a coin.</p>
+                        <p>Contribution: Frontend, backend, smart contract creation.</p>
+                        <p>Tech Used: Solidity, JavaScript, HTML, CSS, React, Node, HardHat, ethers. </p>
+                    </div>
+                    
+                    
+                </div>
+                <div id="project-2-container" class="project-container">
+                    <div id="project-2-text">
+                        <p>Project: Fluther</p>
+                        <p>Description: NFT rental agreement platform.</p>
+                        <p>Contribution: Frontend, UI/UX.</p>
+                        <p>Tech Used: Solidity, JavaScript, HTML, CSS, React, Node, HardHat, ethers. </p>
+                    </div>
+                    <img src="./img/coin.png" height="128px" width="128px">
+                </div>
+                <div id="project-3-container" class="project-container">
+                    <img src="./img/coin.png" height="128px" width="128px">
+                    <div id="project-3-text">
+                        <p>Project: Elastic</p>
+                        <p>Description: NFT rental agreement platform.</p>
+                        <p>Contribution: Frontend, UI/UX.</p>
+                        <p>Tech Used: Solidity, JavaScript, HTML, CSS, React, Node, HardHat, ethers. </p>
+                    </div>
+                    
+                </div>
+            </div>
         </section>
         <section id="contact-section">
             <header id=contact-header-container class="section-header-container">
                 <h1 id=contact-title class="section-title">Contact</h1>
-                <h3 id=contact-intro class="section-intro">Contact information</h3>
             </header>
+            <div id="form-container">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name-input-field" placeholder="Your name..." class="input-field">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email-input-field" placeholder="Your email..." class="input-field">
+
+                    <label for="message">Message</label>
+                    <textarea id="message-input-field" placeholder="Your message..." style="height:200px" class="input-field"></textarea>
+
+                    <input type="submit" value="Submit" id="form-submit-button">
+                </form>
+            </div>
         </section>
         
         <script src="scripts.js"></script>

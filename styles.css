@@ -17,11 +17,16 @@ section {
     align-items: center;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 .section-header-container {
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 1em;
+    
 }
 
 .section-title {
@@ -72,6 +77,39 @@ section {
     background-color: lightgrey;
 }
 
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+    width: 90%;
+    margin-left: 1em;
+}
+
+.project-container {
+    margin: 1em;
+    padding: 1em;
+    border: 0.1em, black, solid;
+}
+
+#project-1-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;    
+}
+
+#project-2-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#project-3-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 
 /******************************************************************************
                             CONTACT SECTION
@@ -79,4 +117,22 @@ section {
 
 #contact-section {
     background-color: grey;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgoldenrodyellow;
+    padding: 1em;
+    border-radius: 0.5em;
+    width: 25em;
+}
+
+#form-submit-button {
+    width: 5em;
+}
+
+.input-field {
+    margin-bottom: 1em;
+    margin-top: 0.25em;
 }
