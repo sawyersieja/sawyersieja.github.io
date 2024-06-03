@@ -1,21 +1,32 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+/******************************************************************************
+                        GENERAL STYLING
+******************************************************************************/
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+}
+
+/******************************************************************************
+                        LANDING PAGE SECTION
+******************************************************************************/
+
+#main-section {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+    height: 100vh;
+    width: 100%;
 }
 
 #main-header-container {
     display:flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 1em;
 }
 
 #main-title {
@@ -32,22 +43,46 @@ body {
     flex-direction: row;
     width: 25%;
     justify-content: space-evenly;
+    padding: 1em;
 }
 
-#linkedin-button {
+.button {
     width: 32px;
     height: 32px;
 }
 
-#github-button {
-    width: 32px;
-    height: 32px;
+/******************************************************************************
+                            PORTFOLIO SECTION
+*******************************************************************************/
+
+#portfolio-section {
+    height: 100vh;
+    width: 100%;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#medium-button {
-
+#portfolio-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
 }
 
-#contact-button {
+#portfolio-title {
+    font-size: 80px;
+    font-weight: bold;
+}
 
+#portfolio-intro {
+    font-size: 28px;
+}
+
+/******************************************************************************
+                        ABOUT ME SECTION
+******************************************************************************/
+section {
+    
 }
