@@ -30,7 +30,7 @@ form {
 }
 
 .section-title {
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold;
 }
 
@@ -66,6 +66,32 @@ form {
 
 #about-section {
     background-color: grey;
+}
+
+#about-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px, red, solid;
+    width: 100%;
+
+}
+
+#about-intro-content {
+    border: 2px, black, solid;
+}
+
+#about-description-content {
+    border: 2px, black, solid;
+}
+
+
+/******************************************************************************
+                        SKILLS AND EXPERIENCE SECTION
+******************************************************************************/
+
+#skills-section {
+    background-color: whitesmoke;
 }
 
 
