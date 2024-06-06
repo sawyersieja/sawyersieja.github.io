@@ -2,15 +2,18 @@
                         GENERAL STYLING
 ******************************************************************************/
 
-body {
+html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -49,6 +52,9 @@ form {
 
 #hero-section {
     background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #hero-button-container {
@@ -71,18 +77,18 @@ form {
 #about-content-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
-    border: 1px, red, solid;
     width: 100%;
 
 }
 
 #about-intro-content {
-    border: 2px, black, solid;
+    border: 2px, black, dashed;
 }
 
 #about-description-content {
-    border: 2px, black, solid;
+    border: 2px, black, dashed;
 }
 
 
@@ -92,6 +98,30 @@ form {
 
 #skills-section {
     background-color: whitesmoke;
+}
+
+#skills-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#skill-languages-container {
+    border: 2px, black, dashed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#skill-icons-container {
+    border: 2px, black, dashed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
 }
 
 
@@ -108,7 +138,6 @@ form {
     flex-direction: column;
     margin: 1em;
     padding: 1em;
-    width: 90%;
     margin-left: 1em;
 }
 
@@ -116,6 +145,8 @@ form {
     margin: 1em;
     padding: 1em;
     border: 0.1em, black, solid;
+    display: flex;
+    align-items: center;
 }
 
 #project-1-container {
