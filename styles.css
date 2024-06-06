@@ -18,6 +18,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 2px solid black;
 }
 
 form {
@@ -51,10 +52,10 @@ form {
 ******************************************************************************/
 
 #hero-section {
-    background-color: lightgrey;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 #hero-button-container {
@@ -71,7 +72,6 @@ form {
 ******************************************************************************/
 
 #about-section {
-    background-color: grey;
 }
 
 #about-content-container {
@@ -84,11 +84,15 @@ form {
 }
 
 #about-intro-content {
-    border: 2px, black, dashed;
+    border: 2px, black, solid;
+    border-radius: 0.5em;
+    padding: 1em;
 }
 
 #about-description-content {
-    border: 2px, black, dashed;
+    border: 2px, black, solid;
+    border-radius: 0.5em;
+    padding: 1em;
 }
 
 
@@ -97,30 +101,33 @@ form {
 ******************************************************************************/
 
 #skills-section {
-    background-color: whitesmoke;
 }
 
 #skills-content-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    padding: 1em;
+    border: 3px, black, solid;
+    border-radius: 0.5em;
 }
 
 #skill-languages-container {
-    border: 2px, black, dashed;
+    border: 2px, black, solid;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding: 1em;
 }
 
 #skill-icons-container {
-    border: 2px, black, dashed;
+    border: 2px, black, solid;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    padding: 1em;
 
 }
 
@@ -130,7 +137,6 @@ form {
 *******************************************************************************/
 
 #portfolio-section {
-    background-color: lightgrey;
 }
 
 #projects-container {
@@ -145,6 +151,7 @@ form {
     margin: 1em;
     padding: 1em;
     border: 0.1em, black, solid;
+    border-radius: 0.5em;
     display: flex;
     align-items: center;
 }
@@ -173,13 +180,13 @@ form {
 *******************************************************************************/
 
 #contact-section {
-    background-color: grey;
+    
 }
 
 #form-container {
     display: flex;
     flex-direction: column;
-    background-color: lightgoldenrodyellow;
+    border: 2px, black, solid;
     padding: 1em;
     border-radius: 0.5em;
     width: 25em;
