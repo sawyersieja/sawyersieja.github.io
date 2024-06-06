@@ -43,8 +43,8 @@ form {
 }
 
 .button {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
 }
 
 /******************************************************************************
@@ -131,6 +131,15 @@ form {
 
 }
 
+.skills-button {
+    text-decoration: none;
+}
+
+.skills-button-icon {
+    height: 64px;
+    width: 64px;
+}
+
 
 /******************************************************************************
                             PORTFOLIO SECTION
@@ -167,6 +176,7 @@ form {
     flex-direction: row;
     justify-content: flex-end;
 }
+
 
 #project-3-container {
     display: flex;
