@@ -14,6 +14,9 @@ html, body {
     width: 100%;
     min-height: 100vh;
     margin: 0;
+    font-family: "Roboto";
+    /*color: white;
+    background: #202731*/
 }
 
 body::-webkit-scrollbar {
