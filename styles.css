@@ -21,6 +21,14 @@ body::-webkit-scrollbar {
 }
 
 section {
+    /*
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    width: 100%;
+    */
+    
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -56,6 +64,19 @@ form {
     text-decoration: none;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+}
+
 /******************************************************************************
                         HERO SECTION
 ******************************************************************************/
@@ -83,6 +104,7 @@ form {
     border: 0.1em, black, solid;
     border-radius: 0.5em;
     text-decoration: none;
+    color: black;
 }
 
 
@@ -138,6 +160,7 @@ form {
     box-shadow: 5px 5px;
 }
 
+
 #skill-languages-container {
     border: 2px, black, solid;
     border-radius: 0.5em;
@@ -147,7 +170,20 @@ form {
     justify-content: center;
     padding: 1em;
     margin: 1em;
+    transition-delay: 200ms;
 }
+/*
+.languages-container{
+    border: 2px, black, solid;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1em;
+    margin: 1em;
+    transition-delay: 200ms;
+}*/
 
 #skill-icons-container {
     border: 2px, black, solid;
@@ -156,6 +192,7 @@ form {
     flex-direction: column;
     align-items: center;
     padding: 1em;
+    transition-delay: 400ms;
 }
 
 .skill-icons-row {
@@ -163,6 +200,19 @@ form {
     display: flex;
     flex-direction: row;
 }
+
+.skill-icons-row:nth-child(1) {
+    transition-delay: 400ms;
+}
+
+.skill-icons-row:nth-child(2) {
+    transition-delay: 600ms;
+}
+
+.skill-icons-row:nth-child(3) {
+    transition-delay: 800ms;
+}
+
 
 .skills-button {
     text-decoration: none;
@@ -197,25 +247,17 @@ form {
     display: flex;
     align-items: center;
     box-shadow: 5px 5px;
+    
 }
 
-#project-1-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;    
+.project-container:nth-child(1) {
+    transition-delay: 200ms;
 }
-
-#project-2-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.project-container:nth-child(2) {
+    transition-delay: 400ms;
 }
-
-
-#project-3-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+.project-container:nth-child(3) {
+    transition-delay: 600ms;
 }
 
 
@@ -244,4 +286,14 @@ form {
 .input-field {
     margin-bottom: 1em;
     margin-top: 0.25em;
+}
+
+
+/******************************************************************************
+                            OTHER
+*******************************************************************************/
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }

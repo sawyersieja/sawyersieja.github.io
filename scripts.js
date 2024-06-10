@@ -4,20 +4,18 @@ document.addEventListener("DOMContentLoaded", function() {
     
 });
 
-const heroSection = document.getElementById("hero-section");
-const aboutSection = document.getElementById("about-section");
-const skillsSection = document.getElementById("skills-section");
-const portfolioSection = document.getElementById("portfolio-section");
-const contactSection = document.getElementById("contact-section");
 
-let currentSection = heroSection;
-let previousSection = null;
-let nextSection = aboutSection;
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
 
-//what are you trying to do?
-//I want to auto scroll up and down
+    });
+});
 
-document.onscroll = function scroll() {
-
-    //aboutSection.scrollIntoView({behavior: "smooth"});
-}
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));

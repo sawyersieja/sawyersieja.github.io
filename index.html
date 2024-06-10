@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Portfolio</title>
         <link rel="stylesheet" href="styles.css">
+        <script defer src="scripts.js"></script>
     </head>
     <body>
-        <section id="hero-section">
+        <section id="hero-section" class="hidden">
             <header id="hero-header-container" class="section-header-container">
                 
                 <h1 id="hero-title" class="section-title">Sawyer Sieja</h1>
@@ -26,7 +27,7 @@
             </div>
         </section>
 
-        <section id="about-section">
+        <section id="about-section" class="hidden">
             <header id="about-header-container" class="section-header-container">
                 <h1 id="about-title" class="section-title">More about me</h1>
             </header>
@@ -45,18 +46,18 @@
             </div>
         </section>
 
-        <section id="skills-section">
+        <section id="skills-section" class="hidden">
             <header id="skills-header-container" class="section-header-container">
                 <h1 id="skills-title" class="section-title">Skills & Experience</h1>
             </header>
             <div id="skills-content-container">
-                <div id="skill-languages-container">
+                <div id="skill-languages-container" class="languages-container hidden">
                     <p>Languages I have experience with: C/C++, HTML, CSS, JavaScript, Solidity, Java, Kotlin, Clojure, Rust, Python, Fortran, COBOL, MIPS Assembly</p>
                     <p>Languages I enjoy: C/C++, Java, HTML, CSS, JavaScript, Solidity, MIPS Assembly</p>
                     <p>🏆 Winner: Not Another Virtual Hackathon 2023</p>
                 </div>
-                <div id="skill-icons-container">
-                    <div id="language-icons-container" class="skill-icons-row">
+                <div id="skill-icons-container" class="hidden">
+                    <div id="language-icons-container" class="skill-icons-row hidden">
                         <h3>Languages:</h3>
                         <a id="c-button" href="https://en.wikipedia.org/wiki/C_(programming_language)" class="skills-button">
                             <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/c/c-original.svg" alt="C" class="skills-button-icon" />
@@ -87,7 +88,7 @@
                         </a>
                         
                     </div>
-                    <div id="dev-tool-icons-container" class="skill-icons-row">
+                    <div id="dev-tool-icons-container" class="skill-icons-row hidden">
                         <h3>Developer tools:</h3>
                         <a id="git-button" href="https://www.git-scm.com/" class="skills-button">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" alt="Git" class="skills-button-icon" />
@@ -125,7 +126,7 @@
 
 
                     </div>
-                    <div id="os-icons-container" class="skill-icons-row">
+                    <div id="os-icons-container" class="skill-icons-row hidden">
                         <h3>Operating systems:</h3>
                         <a id="windows-button" href="https://www.microsoft.com/en-us/windows?r=1" class="skills-button">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows icon" class="skills-button-icon" />
@@ -143,12 +144,12 @@
             </div>
         </section>
 
-        <section id="portfolio-section">
+        <section id="portfolio-section" class="hidden">
             <header id="portfolio-header-container" class="section-header-container">
                 <h1 id="portfolio-title" class="section-title">Project Portfolio</h1>
             </header>
             <div id="projects-container">
-                <div id="project-1-container" class="project-container">
+                <div id="project-1-container" class="project-container hidden">
                     <img style="margin: 1em;" src="./img/coin.png" height="128px" width="128px">
                     <div id="project-1-text">
                         <p>Project: Coin Flip</p>
@@ -160,7 +161,7 @@
                     
                     
                 </div>
-                <div id="project-2-container" class="project-container">
+                <div id="project-2-container" class="project-container hidden">
                     <div id="project-2-text">
                         <p>Project: Fluther</p>
                         <p>Description: NFT rental agreement platform.</p>
@@ -171,7 +172,7 @@
                     </div>
                     <img style="margin: 1em;" src="./img/jellyfish.png" height="128px" width="128px">
                 </div>
-                <div id="project-3-container" class="project-container">
+                <div id="project-3-container" class="project-container hidden">
                     <img style="margin: 1em;" src="./img/ElasticLogo.png" height="128px" width="128px">
                     <div id="project-3-text">
                         <p>Project: Elastic</p>
@@ -185,11 +186,11 @@
             </div>
         </section>
 
-        <section id="contact-section">
+        <section id="contact-section" class="hidden">
             <header id="contact-header-container" class="section-header-container">
                 <h1 id="contact-title" class="section-title">Contact</h1>
             </header>
-            <div id="form-container">
+            <div id="form-container" class="hidden">
                 <form>
                     <label for="name">Name</label>
                     <input type="text" id="name-input-field" placeholder="Your name..." class="input-field">
@@ -208,6 +209,6 @@
             </div>
         </section>
         
-        <script defer src="scripts.js"></script>
+        
     </body>
 </html>
