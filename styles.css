@@ -37,6 +37,15 @@ form {
     flex-direction: column;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
+    width: 100%;
+}
+
 .section-header-container {
     display:flex;
     flex-direction: column;
@@ -245,35 +254,6 @@ form {
 .project-container:nth-child(3) {
     transition-delay: 600ms;
 }
-
-
-/******************************************************************************
-                            CONTACT SECTION
-*******************************************************************************/
-
-#contact-section {
-    
-}
-
-#form-container {
-    display: flex;
-    flex-direction: column;
-    border: 2px, black, solid;
-    padding: 1em;
-    border-radius: 0.5em;
-    width: 25em;
-    box-shadow: 5px 5px;
-}
-
-#form-submit-button {
-    width: 5em;
-}
-
-.input-field {
-    margin-bottom: 1em;
-    margin-top: 0.25em;
-}
-
 
 /******************************************************************************
                             OTHER
