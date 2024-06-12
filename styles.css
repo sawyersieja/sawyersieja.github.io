@@ -8,18 +8,51 @@ html {
 
 html, body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    
+    justify-content: space-between;
     width: 100%;
     min-height: 100vh;
     margin: 0;
     font-family: "Roboto";
-    /*color: white;
-    background: #202731*/
+    color: white;
+    background: #202731
 }
 
 body::-webkit-scrollbar {
+    display: none;
+}
+
+#container {
+    display: flex;
+    
+    width: 100%;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    overflow-y: auto;
+    
+}
+
+#left::-webkit-scrollbar {
+    display: none;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    margin-left: 40%;
+    overflow-y: auto;
+}
+
+#right::-webkit-scrollbar {
     display: none;
 }
 
@@ -29,7 +62,9 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid grey;
+    
+    
 }
 
 form {
@@ -42,7 +77,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: grey;
+    background-color: teal;
     width: 100%;
 }
 
@@ -56,10 +91,12 @@ footer {
 .section-title {
     font-size: 70px;
     font-weight: bold;
+    color: rgb(94 234 212);
 }
 
 .section-intro {
     font-size: 28px;
+    color: rgb(148 163 184);
 }
 
 .button {
@@ -71,7 +108,7 @@ footer {
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: all 1s;
 }
 
@@ -81,6 +118,12 @@ footer {
     transform: translateX(0%);
 }
 
+.text-color-general {
+    color: rgb(148 163 184);
+}
+
+
+
 /******************************************************************************
                         HERO SECTION
 ******************************************************************************/
@@ -89,7 +132,13 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-bottom: none;
     
+    
+}
+
+#hero-intro {
+    color: rgb(148 163 184);
 }
 
 #hero-button-container {
@@ -129,19 +178,21 @@ footer {
 }
 
 #about-intro-content {
-    border: 2px, black, solid;
+    border: 2px, teal, solid;
     border-radius: 0.5em;
     padding: 1em;
     box-shadow: 5px 5px;
     margin: 1em;
+    color: teal;
 }
 
 #about-description-content {
-    border: 2px, black, solid;
+    border: 2px, teal, solid;
     border-radius: 0.5em;
     padding: 1em;
     margin: 1em;
     box-shadow: 5px 5px;
+    color: teal;
 }
 
 
@@ -171,9 +222,11 @@ footer {
     align-items: flex-start;
     justify-content: center;
     padding: 1em;
-    margin: 1em;border: 2px, black, solid;
+    margin: 1em;
+    border: 2px, teal, solid;
     border-radius: 0.5em;
     box-shadow: 5px 5px;
+    color: teal;
     
 }
 
@@ -184,9 +237,10 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 1em;
-    border: 3px, black, solid;
+    border: 3px, teal, solid;
     border-radius: 0.5em;
     box-shadow: 5px 5px;
+    color: teal;
     
 }
 
@@ -224,6 +278,7 @@ footer {
 *******************************************************************************/
 
 #portfolio-section {
+    border-bottom: none;
 }
 
 #projects-container {
@@ -237,11 +292,12 @@ footer {
 .project-container {
     margin: 1em;
     padding: 1em;
-    border: 0.1em, black, solid;
+    border: 0.1em, teal, solid;
     border-radius: 0.5em;
     display: flex;
     align-items: center;
     box-shadow: 5px 5px;
+    color: teal;
     
 }
 
