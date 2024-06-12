@@ -16,10 +16,23 @@
                 <section id="hero-section">
                     <header id="hero-header-container" class="section-header-container">
                         <h1 id="hero-title" class="section-title">Sawyer Sieja</h1>
-                        <h2 style="color: royalblue">[Website undergoing construction...]</h2>
-                        <h3 id="hero-job" class="section-intro">Software Engineer</h3>
-                        <h5 id="hero-intro">I create professional software solutions and build full stack web applications.</h5>
+                        <h2 id="hero-job" class="section-intro">Software Engineer</h2>
+                        <p id="hero-intro">I create professional software solutions and build full stack web applications.</p>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#about-section" class="nav-section-link">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a href="#skills-section" class="nav-section-link">SKILLS</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio-section" class="nav-section-link">PROJECTS</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </header>
+                    
                     <div id="hero-button-container">
                         <a id="linkedin-button" href="https://www.linkedin.com/in/sawyersieja/" class="button">
                             <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/linkedin/linkedin-original.svg" alt="LinkedIn icon" />
@@ -32,13 +45,13 @@
             </div>
 
             <div id="right">
-                <section id="about-section" class="hidden">
+                <section id="about-section">
                     <header id="about-header-container" class="section-header-container">
-                        <h1 id="about-title" class="section-title">More about me</h1>
+                        <h1 id="about-title" class="section-title hidden">More about me</h1>
                     </header>
                     <div id="about-content-container">
                         
-                        <div id="about-description-content">
+                        <div id="about-description-content" class="hidden">
                             <h3 class="text-color-general">Providing professional software solutions to real world problems.</h3>
                             <h3 class="text-color-general">Improving performance, reliability, and scalability to software applications and organizations.</h3>
                             <h3 class="text-color-general">Always learning newer tools, technologies, and languages.</h3>
@@ -48,9 +61,9 @@
                     </div>
                 </section>
 
-                <section id="skills-section" class="hidden">
+                <section id="skills-section">
                     <header id="skills-header-container" class="section-header-container">
-                        <h1 id="skills-title" class="section-title">Skills & Experience</h1>
+                        <h1 id="skills-title" class="section-title hidden">Skills & Experience</h1>
                     </header>
                     <div id="skills-content-container" class="hidden">
                         <div id="skill-languages-container" class="hidden">
@@ -146,9 +159,9 @@
                     </div>
                 </section>
 
-                <section id="portfolio-section" class="hidden">
+                <section id="portfolio-section">
                     <header id="portfolio-header-container" class="section-header-container">
-                        <h1 id="portfolio-title" class="section-title">Project Portfolio</h1>
+                        <h1 id="portfolio-title" class="section-title hidden">Project Portfolio</h1>
                     </header>
                     <div id="projects-container">
                         <div id="project-1-container" class="project-container hidden">
@@ -156,8 +169,6 @@
                                 <a id="" href="https://github.com/sawyersieja/coinflip" style="text-decoration: none">
                                     <img style="margin: 1em;" src="./img/coin.png" alt="Coin Flip Github repository" height="128px" width="128px">
                                 </a>
-
-                                
 
                             </div>
                             <div id="project-1-text">
@@ -174,20 +185,28 @@
                                 <p class="text-color-general">Project: Fluther</p>
                                 <p class="text-color-general">Description: NFT rental agreement platform.</p>
                                 <p class="text-color-general">Contribution: Frontend, UI/UX.</p>
-                                <p class="text-color-general">Tech Used: Solidity, JavaScript, HTML, CSS, React, Node, HardHat, ethers. </p>
-                                <a href="https://github.com/kitfud/Fluther" style="text-decoration: none">GitHub Link</a>
-                                
+                                <p class="text-color-general">Tech Used: Solidity, JavaScript, HTML, CSS, React, Node, HardHat, ethers. </p>                                   
                             </div>
-                            <img style="margin: 1em;" src="./img/jellyfish.png" height="128px" width="128px">
+                            <div>
+                                <a id="" href="https://github.com/kitfud/Fluther" style="text-decoration: none">
+                                    <img style="margin: 1em;" src="./img/jellyfish.png" alt="Fluther Github repository" height="128px" width="128px">
+                                </a>
+                            </div>
+                            
                         </div>
                         <div id="project-3-container" class="project-container hidden">
-                            <img style="margin: 1em;" src="./img/ElasticLogo.png" height="128px" width="128px">
+                            <div>
+                                <a id="" href="https://github.com/EWCunha/EthGlobal-nftRent-elastic" style="text-decoration: none">
+                                    <img style="margin: 1em;" src="./img/ElasticLogo.png" alt="Elastic Github repository" height="128px" width="128px">
+                                </a>
+                            </div>
+                            
+                            
                             <div id="project-3-text">
                                 <p class="text-color-general">Project: Elastic</p>
                                 <p class="text-color-general">Description: NFT rental agreement platform.</p>
                                 <p class="text-color-general">Contribution: Frontend, UI/UX.</p>
                                 <p class="text-color-general">Tech Used: Solidity, JavaScript, HTML, CSS, React, Node, HardHat, ethers. </p>
-                                <a href="https://github.com/EWCunha/EthGlobal-nftRent-elastic" style="text-decoration: none">GitHub Link</a>
                             </div>
                         </div>
                     </div>
