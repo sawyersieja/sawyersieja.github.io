@@ -134,7 +134,7 @@ section {
 #hero-button-container {
     display: inline-block;
     margin-top: 12em;
-    padding: 1em;
+    padding-right: 1em;
 }
 
 #nav-menu {
@@ -253,6 +253,8 @@ section {
 }
 
 
+
+
 .skills-button {
     text-decoration: none;
 }
@@ -292,13 +294,19 @@ section {
 
 }
 
-.project-container:nth-child(1) {
+.project-container:nth-child(1){
     transition-delay: 200ms;
 }
 .project-container:nth-child(2) {
-    transition-delay: 400ms;
+    transition-delay: 300ms;
 }
 .project-container:nth-child(3) {
+    transition-delay: 400ms;
+}
+.project-container:nth-child(4) {
+    transition-delay: 500ms;
+}
+.project-container:nth-child(5) {
     transition-delay: 600ms;
 }
 
