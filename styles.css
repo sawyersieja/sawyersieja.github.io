@@ -58,14 +58,14 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 2px solid grey;
+    border-bottom: none;
 }
 
 
 .section-header-container {
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     
 }
 
@@ -221,7 +221,7 @@ section {
 #skill-icons-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 1em;
     border: 3px, teal, solid;
     border-radius: 0.5em;
@@ -255,6 +255,7 @@ section {
 .skills-button-icon {
     height: 64px;
     width: 64px;
+    
 }
 
 
