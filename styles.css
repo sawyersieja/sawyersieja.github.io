@@ -141,7 +141,7 @@ section {
     list-style-type: none;
 }
 
-.nav-menu-item {
+.nav-menu-link {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -157,6 +157,17 @@ section {
     height: 1px;
     margin-right: 1em;
 }
+
+.nav-menu-item:hover a.nav-menu-link  {
+    color: rgb(226 232 240);
+}
+
+.nav-menu-item:hover .nav-indicator {
+    background-color: rgb(226 232 240);
+}
+
+
+
 
 
 
