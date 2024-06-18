@@ -23,6 +23,11 @@
         display: none;
     }
 
+    img {
+        display: block;
+        margin-right: 1em;
+    }
+
     #container {
         display: flex;
         padding-left: 10rem;
@@ -302,9 +307,11 @@
         border: 0.1em, teal, solid;
         border-radius: 0.5em;
         display: flex;
+        flex-direction: row;
         align-items: center;
         box-shadow: 5px 5px;
         color: teal;
+        
 
     }
 
@@ -322,6 +329,10 @@
     }
     .project-container:nth-child(5) {
         transition-delay: 600ms;
+    }
+
+    .project-text {
+        
     }
 }
 /******************************************************************************
