@@ -1,4 +1,7 @@
-@media (min-width: 1080px) and (max-width: 1920px) {
+/*
+-extra large devices (large laptops and desktops, 1200px and up)
+*/
+@media only screen and (min-width: 1200px) {
 
     /******************************************************************************
                             GENERAL STYLING
@@ -336,14 +339,55 @@
     }
 }
 /******************************************************************************
+                    MEDIA QUERIES FOR RESPONSIVENESS
+*******************************************************************************/
+
+/*
+-extra small devices (phones, 600px and down)
+*/
+@media only screen and (max-width: 599.9px) {
+    body {
+        background-color: red;
+    }
+
+}
+
+/*
+-small devices (portrait tablets and large phones, 600px to 768px)
+*/
+@media only screen and (min-width: 600px) and (max-width: 767.9px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/*
+-medium devices (landscape tablets, 768px to 992px)
+*/
+@media only screen and (min-width: 768px) and (max-width: 991.99px) {
+    body {
+        background-color: greenyellow;
+    }
+}
+
+/*
+-large devices (laptops/desktops, 992px to 1200px)
+*/
+@media only screen and (min-width: 992px) and (max-width: 1199.9px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+
+
+/******************************************************************************
                             OTHER
 *******************************************************************************/
+
+
 @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
     }
 }
-
-/*
-media query sizes
-*/
