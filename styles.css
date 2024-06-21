@@ -1,13 +1,76 @@
 :root {
-    --main-color: rgb(15, 23, 42);;
-    --secondary-color: rgb(255, 255, 255);
+    --background-color: rgb(15, 23, 42);
+    --text-primary-color: rgb(203, 213, 225);
+    --text-secondary-color: rgb(226 232 240);
+    --text-third-color: rgb(148 163 184);
+    --nav-menu-indicator-color: rgb(100, 116, 139);
+    --border-color: teal;
     --font-family: "Roboto", sans-serif;
+    /*--font-small: ;
+    --font-medium: ;
+    --font-large:;
+    --font-xl:;
+    --line-height: ;
+    --font-weight:;*/
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-family: var(--font-family);
+        color: var(--text-primary-color);
+        background: var(--background-color);
+    }
+
+    svg {
+        height: 64px;
+        width: 64px;
+    }
+
+    h1 {
+
+    }
+
+    h2 {
+
+    }
+
+    h3 {
+
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-bottom: none;        
+    }
+
+    .section-header-container {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5em;
+    }
+
+    .nav-menu-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0.25em;
+        color: var(--nav-menu-indicator-color);
+        text-decoration: none;
+        
+    }
+
+    
     
 }
 
 
 /*
 -extra large devices (large laptops and desktops, 1200px and up)
+-add mouse position light
 */
 @media only screen and (min-width: 1200px) {
 
@@ -25,8 +88,8 @@
         justify-content: center;
         margin: 0;
         font-family: var(--font-family);
-        color: rgb(255, 255, 255);
-        background: rgb(15, 23, 42);
+        color: var(--text-primary-color);
+        background: var(--background-color);
        
         
     }
@@ -95,13 +158,13 @@
     .section-title {
         font-size: 2em;
         font-weight: 700;
-        color: rgb(255, 255, 255);
+        color: var(--secondary-color);
     }
 
     .section-intro {
         font-size: 1.5em;
         font-weight: 300;
-        color: rgb(203, 213, 225);
+        color: var(--secondary-color);
     }
 
     .button {
@@ -125,7 +188,12 @@
     }
 
     .text-color-general {
-        color: rgb(203, 213, 225);
+        color: var(--text-primary-color);
+        
+    }
+
+    .icon-row-text {
+        margin-right: 1rem;
     }
 
 
@@ -136,15 +204,15 @@
 
     #hero-title {
         font-size: 4em;
-        color: rgb(226 232 240);
+        color: var(--text-secondary-color);
     }
 
     #hero-intro {
-        color: rgb(148 163 184);
+        color: var(--text-third-color);
     }
 
     #hero-job {
-        color: rgb(226 232 240);
+        color: var(--text-secondary-color);
     }
 
     #hero-button-container {
@@ -163,13 +231,13 @@
         flex-direction: row;
         align-items: center;
         margin: 0.25em;
-        color: rgb(100, 116, 139);
+        color: var(--nav-menu-indicator-color);
         text-decoration: none;
     }
 
     .nav-indicator {
         display: inline-block;
-        background-color: teal;
+        background-color: var(--border-color);
         width: 2em;
         height: 1px;
         margin-right: 1em;
@@ -177,11 +245,11 @@
 
 
     .nav-menu-item:hover a.nav-menu-link  {
-        color: rgb(226 232 240);
+        color: var(--text-secondary-color);
     }
 
     .nav-menu-item:hover .nav-indicator {
-        background-color: rgb(226 232 240);
+        background-color: var(--text-secondary-color);
     }
 
 
@@ -190,11 +258,11 @@
     ******************************************************************************/
    
     #about-description-content {
-        border: 2px, teal, solid;
+        border: 2px, var(--border-color), solid;
         border-radius: 0.5em;
         box-shadow: 5px 5px;
         padding: 1em;
-        color: teal;
+        color: var(--border-color);
         
     }
 
@@ -220,10 +288,10 @@
         align-items: flex-start;
         justify-content: center;
         padding: 1em;
-        border: 2px, teal, solid;
+        border: 2px, var(--border-color), solid;
         border-radius: 0.5em;
         box-shadow: 5px 5px;
-        color: teal;
+        color: var(--border-color);
         
     }
 
@@ -232,10 +300,10 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 1em;
-        border: 3px, teal, solid;
+        border: 3px, var(--border-color), solid;
         border-radius: 0.5em;
         box-shadow: 5px 5px;
-        color: teal;
+        color: var(--border-color);
         
     }
 
@@ -285,13 +353,13 @@
 
     .project-container {
         padding: 1em;
-        border: 0.1em, teal, solid;
+        border: 0.1em, var(--border-color), solid;
         border-radius: 0.5em;
         display: flex;
         flex-direction: row;
         align-items: center;
         box-shadow: 5px 5px;
-        color: teal;
+        color: var(--border-color);
         
         
 
@@ -324,9 +392,26 @@
 /*
 -extra small devices (phones, 600px and down)
 */
-@media only screen and (max-width: 599.9px) {
+@media only screen and (max-width: 599.99px) {
     body {
-        background-color: red;
+        background-color: var(--background-color);
+        
+        
+    }
+
+    section {
+        
+    }
+
+    #container {
+        flex-direction: column;
+        min-width: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .section-header-container {
+        margin-top: 2rem;
     }
 
 }
@@ -336,8 +421,10 @@
 */
 @media only screen and (min-width: 600px) and (max-width: 767.9px) {
     body {
-        background-color: blue;
+        background-color: var(--background-color);
     }
+
+    
 }
 
 /*
@@ -345,16 +432,17 @@
 */
 @media only screen and (min-width: 768px) and (max-width: 991.99px) {
     body {
-        background-color: greenyellow;
+        background-color: var(--background-color);
     }
 }
 
 /*
 -large devices (laptops/desktops, 992px to 1200px)
+-add mouse position light
 */
 @media only screen and (min-width: 992px) and (max-width: 1199.9px) {
     body {
-        background-color: yellow;
+        background-color: var(--background-color);
     }
 }
 
