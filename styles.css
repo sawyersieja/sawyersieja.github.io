@@ -12,14 +12,22 @@
     --font-xl:;
     --line-height: ;
     --font-weight:;*/
-    body {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        margin: 0;
         font-family: var(--font-family);
         color: var(--text-primary-color);
         background: var(--background-color);
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
     }
 
     svg {
@@ -44,6 +52,13 @@
         display: flex;
         flex-direction: column;
         border-bottom: none;        
+    }
+
+    #container {
+        flex-direction: column;
+        min-width: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .section-header-container {
@@ -78,24 +93,9 @@
                             GENERAL STYLING
     ******************************************************************************/
 
-    html {
-        scroll-behavior: smooth;
-    }
-
     html, body {
-        display: flex;
         flex-direction: row;
         justify-content: center;
-        margin: 0;
-        font-family: var(--font-family);
-        color: var(--text-primary-color);
-        background: var(--background-color);
-       
-        
-    }
-
-    body::-webkit-scrollbar {
-        display: none;
     }
 
     img {
@@ -104,10 +104,8 @@
     }
 
     #container {
-        display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        min-width: auto;
         padding-left: 3rem;
         padding-right: 3rem;
     }
@@ -120,7 +118,6 @@
         width: 40%;
         height: 100vh;
         top: 0;
-        
     }
 
     #left::-webkit-scrollbar {
@@ -271,11 +268,6 @@
                             SKILLS AND EXPERIENCE SECTION
     ******************************************************************************/
 
-    #skills-section {
-        
-        
-    }
-
     #skills-content-container {
         display: flex;
         flex-direction: column;
@@ -381,9 +373,6 @@
         transition-delay: 600ms;
     }
 
-    .project-text {
-        
-    }
 }
 /******************************************************************************
                     MEDIA QUERIES FOR RESPONSIVENESS
@@ -393,22 +382,6 @@
 -extra small devices (phones, 600px and down)
 */
 @media only screen and (max-width: 599.99px) {
-    body {
-        background-color: var(--background-color);
-        
-        
-    }
-
-    section {
-        
-    }
-
-    #container {
-        flex-direction: column;
-        min-width: auto;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
 
     .section-header-container {
         margin-top: 2rem;
@@ -420,10 +393,8 @@
 -small devices (portrait tablets and large phones, 600px to 768px)
 */
 @media only screen and (min-width: 600px) and (max-width: 767.9px) {
-    body {
-        background-color: var(--background-color);
-    }
-
+    
+    
     
 }
 
@@ -431,9 +402,7 @@
 -medium devices (landscape tablets, 768px to 992px)
 */
 @media only screen and (min-width: 768px) and (max-width: 991.99px) {
-    body {
-        background-color: var(--background-color);
-    }
+    
 }
 
 /*
@@ -441,8 +410,29 @@
 -add mouse position light
 */
 @media only screen and (min-width: 992px) and (max-width: 1199.9px) {
-    body {
-        background-color: var(--background-color);
+    #container {
+        flex-direction: row;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        top: 0;
+    }
+
+    #right {
+        display: inline-block;
+        flex-direction: column;
+        position: sticky;
+        width: 60%;
+        margin-left: calc(40% + 4.25rem);
+        overflow: auto;
     }
 }
 
