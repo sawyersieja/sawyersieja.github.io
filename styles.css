@@ -22,11 +22,12 @@
     html, body {
         display: flex;
         flex-direction: row;
-        width: auto;
+        justify-content: center;
         margin: 0;
         font-family: var(--font-family);
         color: rgb(255, 255, 255);
         background: rgb(15, 23, 42);
+       
         
     }
 
@@ -41,17 +42,21 @@
 
     #container {
         display: flex;
-        height: 100vh;
+        flex-direction: row;
+        justify-content: flex-start;
+        min-width: auto;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 
     #left {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        position: sticky;
+        position: fixed;
         width: 40%;
+        height: 100vh;
         top: 0;
-        padding-left: 6rem;
         
     }
 
@@ -64,8 +69,8 @@
         flex-direction: column;
         position: sticky;
         width: 60%;
+        margin-left: calc(40% + 4.25rem);
         overflow: auto;
-        padding-right:6rem;
     }
 
     #right::-webkit-scrollbar {
