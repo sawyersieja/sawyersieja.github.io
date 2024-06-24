@@ -709,7 +709,6 @@ END ROOT VALUES
         width: calc(40%);
         height: 100vh;
         top: 0;
-        border: 5px, dashed, red;
     }
 
     #hero::-webkit-scrollbar {
@@ -723,7 +722,6 @@ END ROOT VALUES
         width: calc(60% - 5rem);
         margin-left: calc(40% + 4.5rem);
         overflow: auto;
-        border: 5px, dashed, orange;
 
     }
 
