@@ -584,7 +584,6 @@ END ROOT VALUES
         width: 40%;
         height: 100vh;
         top: 0;
-        border: 5px, dashed, red;
     }
 
     #main {
@@ -593,7 +592,6 @@ END ROOT VALUES
         position: sticky;
         width: calc(60% - 5rem);
         margin-left: calc(40% + 4.5rem);
-        border: 5px, dashed, orange;
         overflow: auto;
         
     }
@@ -684,7 +682,6 @@ END ROOT VALUES
     html, body {
         flex-direction: row;
         justify-content: center;
-        border: 5px, dashed, skyblue;
     }
 
     img {
@@ -701,7 +698,6 @@ END ROOT VALUES
         padding-right: 3rem;
         padding-top: 3rem;
         
-        border: 5px, dashed, yellow;
         
     }
 
