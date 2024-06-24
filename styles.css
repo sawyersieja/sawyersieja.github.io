@@ -418,7 +418,7 @@ END ROOT VALUES
         position: sticky;
         width: auto;
         margin-left: none;
-        overflow: auto;
+        
     }
     
     #main::-webkit-scrollbar {
@@ -483,7 +483,7 @@ END ROOT VALUES
         position: sticky;
         width: auto;
         margin-left: none;
-        overflow: auto;
+        
     }
 
     nav {
@@ -535,7 +535,7 @@ END ROOT VALUES
         position: sticky;
         width: auto;
         margin-left: none;
-        overflow: auto;
+        
     }
     
     nav {
@@ -590,7 +590,7 @@ END ROOT VALUES
         position: sticky;
         width: calc(60% - 5rem);
         margin-left: calc(40% + 4.5rem);
-        overflow: auto;
+        
     }
 
     nav {
@@ -717,7 +717,7 @@ END ROOT VALUES
         position: sticky;
         width: calc(60% - 5rem);
         margin-left: calc(40% + 4.5rem);
-        overflow: auto;
+
     }
 
     #main::-webkit-scrollbar {
