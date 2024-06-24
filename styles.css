@@ -41,7 +41,6 @@ html, body {
     font-family: var(--font-family);
     color: var(--text-primary-color);
     background: var(--background-color);
-    border: 5px, dashed, blue;
     
 }
 
@@ -100,14 +99,12 @@ h3 {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2rem;
-    border: 5px, dashed, yellow;
 }
 
 
 #hero {
     min-width: auto;
     top: 0;
-    border: 5px, dashed, orange;
 }
 
 #hero::-webkit-scrollbar {
@@ -116,7 +113,6 @@ h3 {
     
 
 #main {
-    border: 5px, dashed, lavender;
 }
 
 #main::-webkit-scrollbar {
