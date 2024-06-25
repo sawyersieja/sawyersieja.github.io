@@ -534,7 +534,7 @@ h3 {
         width: calc(60% - 5rem);
         margin-left: calc(40% + 4.5rem);
         overflow: auto;
-        
+        padding-right: 5px;
     }
 
     nav {
@@ -662,7 +662,9 @@ h3 {
         position: sticky;
         width: calc(60% - 5rem);
         margin-left: calc(40% + 4.5rem);
+        padding-right: 5px;
         overflow: auto;
+        
 
     }
 
