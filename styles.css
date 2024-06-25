@@ -243,7 +243,7 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     padding: 1em;
-    border: 3px, var(--border-color), solid;
+    border: 2px solid var(--border-color);
     border-radius: 0.5em;
     box-shadow: 5px 5px;
     color: var(--border-color);
@@ -297,7 +297,7 @@ h3 {
 
 .project-container {
     padding: 1em;
-    border: 0.1em, var(--border-color), solid;
+    border: 2px solid var(--border-color);
     border-radius: 0.5em;
     display: flex;
     flex-direction: row;
@@ -831,7 +831,7 @@ h3 {
         align-items: flex-start;
         
         padding: 1em;
-        border: 3px, var(--border-color), solid;
+        border: 2px solid var(--border-color);
         border-radius: 0.5em;
         box-shadow: 5px 5px;
         color: var(--border-color);
@@ -885,7 +885,7 @@ h3 {
 
     .project-container {
         padding: 1em;
-        border: 0.1em, var(--border-color), solid;
+        border: 2px solid var(--border-color);
         border-radius: 0.5em;
         display: flex;
         flex-direction: row;
