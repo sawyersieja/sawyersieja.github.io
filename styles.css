@@ -64,9 +64,10 @@ nav {
 
 ul {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 1em;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    padding-left: 0;
 }
 
 li {
@@ -126,6 +127,14 @@ h3 {
 
 #main::-webkit-scrollbar {
     display: none;
+}
+
+#nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding-left: 2rem;
 }
 
 .section-header-container {
@@ -302,6 +311,10 @@ h3 {
     gap: 2em;
 }
 
+.event-dates-style {
+    color: var(--text-third-color);
+}
+
 .event-name-style {
     /*
     big thick bold whiter
@@ -325,6 +338,15 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1.5em;
+}
+
+.skill-text {
+    border: 1px solid var(--border-color);
+    border-radius: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
 }
 
 .skills-button {
