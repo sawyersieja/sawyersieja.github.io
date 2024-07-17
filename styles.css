@@ -5,6 +5,7 @@
     --text-third-color: rgb(165, 182, 206);
     --nav-menu-indicator-color: rgb(100, 116, 139);
     --border-color: teal;
+    --emphasize-color: rgb(94, 234, 212);
     --font-family: "Roboto", sans-serif;
     --fw-title: 700;
     --fw-intro: 300;
@@ -349,10 +350,12 @@ h3 {
 .skill-text {
     border: 1px solid var(--border-color);
     border-radius: 1.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    color: var(--emphasize-color);
+    background-color: rgba(45, 212, 191, .1);
 }
 
 .skills-button {
