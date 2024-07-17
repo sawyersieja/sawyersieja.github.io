@@ -147,14 +147,14 @@ h3 {
 .section-title {
     font-size: var(--fs-lg);
     font-weight: var(--fw-lg);
-    color: var(--secondary-color);
+    color: var(--text-secondary-color);
     margin-bottom: 1rem;
 }
 
 .section-intro {
     font-size: var(--fs-md);
     font-weight: var(--fw-md);
-    color: var(--secondary-color);
+    color: var(--text-secondary-color);
 }
 
 .button {
@@ -171,6 +171,7 @@ h3 {
 .icon-row-text {
     margin-right: 1rem;
     text-wrap: wrap;
+    color: var(--text-primary-color);
 }
 
 
@@ -284,6 +285,11 @@ h3 {
     gap: 1em;
 }
 
+.skill-events-title {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-lg);
+    color: var(--text-secondary-color);
+}
 .event-container {
     display: flex;
     flex-direction: row;
